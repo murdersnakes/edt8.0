@@ -1,14 +1,14 @@
-import { Red_Hat_Display, Red_Hat_Text } from "next/font/google";
+import { Karla, Manrope } from "next/font/google";
 import "../styles/globals.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const headFont = Red_Hat_Display({
+const headFont = Manrope({
   subsets: ["latin"],
   display: "optional",
   variable: "--font-head",
 });
-const bodyFont = Red_Hat_Display({
+const bodyFont = Karla({
   subsets: ["latin"],
   display: "optional",
   variable: "--font-body",
