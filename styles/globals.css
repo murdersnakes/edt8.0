@@ -5,7 +5,7 @@
 @layer base{
 
   .cont{
-    @apply max-w-7xl mx-auto px-5 sm:px-0
+    @apply max-w-7xl mx-auto px-5
   }
 
   .box{
@@ -25,7 +25,7 @@
   }
 
   .h1{
-    @apply font-head font-black text-3xl sm:text-5xl tracking-normal sm:tracking-tight leading-none
+    @apply font-head font-extrabold text-4xl sm:text-6xl tracking-tight sm:tracking-tighter leading-none
   }
 
   .p1{
@@ -41,7 +41,7 @@
   }
 
   .h3{
-    @apply font-head font-semibold text-lg sm:text-xl tracking-normal sm:tracking-tight leading-none
+    @apply font-head font-semibold text-xl sm:text-2xl tracking-normal sm:tracking-tight leading-none
   }
 
   .p3{

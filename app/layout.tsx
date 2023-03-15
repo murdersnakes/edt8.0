@@ -5,12 +5,12 @@ import Navbar from "./Navbar";
 
 const headFont = Manrope({
   subsets: ["latin"],
-  display: "optional",
+  display: 'swap',
   variable: "--font-head",
 });
 const bodyFont = Karla({
   subsets: ["latin"],
-  display: "optional",
+  display: 'swap',
   variable: "--font-body",
 });
 
