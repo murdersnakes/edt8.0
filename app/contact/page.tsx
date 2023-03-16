@@ -42,6 +42,7 @@ export default function page() {
               </Link>
 
               <Link
+                target="_blank"
                 className='h2 transition-all duration-300 p-3 m-1 bg-light-200 rounded-xl hover:bg-primary-700 hover:text-white'
                 href={{ pathname: contacts.facebook }}
               >
