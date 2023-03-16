@@ -9,13 +9,16 @@ import {
 
 export default function Footer() {
   return (
-    <footer aria-label='Site Footer' className=''>
+    <footer aria-label='Site Footer' className='bg-white/50'>
       <div className='cont py-24'>
         <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
           <div>
-            <Link href='/' className='p2 py-3'>
-              edt<span className='text-primary-700'>carlessons.ie</span>
-            </Link>
+          <Link
+            href='/'
+            className='h1 text-lg hover:underline'
+          >
+            edt<span className='text-primary-700'>carlessons.ie</span>
+          </Link>
 
             <p className='max-w-xs mt-4 text-light-500'>
               Maximising your road safety knowledge and behaviors helps you to
@@ -55,7 +58,7 @@ export default function Footer() {
                 <ul className='space-y-4 text-sm'>
                   <li>
                     <Link
-                      href='/'
+                      href='/lessons'
                       className='text-light-700 transition hover:opacity-75'
                     >
                       EDT Lessons
@@ -88,15 +91,7 @@ export default function Footer() {
                 <ul className='space-y-4 text-sm'>
                   <li>
                     <Link
-                      href='/about'
-                      className='text-light-700 transition hover:opacity-75'
-                    >
-                      About us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href='/about'
+                      href='/'
                       className='text-light-700 transition hover:opacity-75'
                     >
                       Certification
@@ -104,7 +99,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href='/location'
+                      href='/'
                       className='text-light-700 transition hover:opacity-75'
                     >
                       Location
@@ -162,7 +157,7 @@ export default function Footer() {
                 <ul className='space-y-4 text-sm'>
                   <li>
                     <Link
-                      href='/privacy-policy'
+                      href='/'
                       className='text-light-700 transition hover:opacity-75'
                     >
                       Privacy Policy
@@ -170,7 +165,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href='/terms-of-service'
+                      href='/'
                       className='text-light-700 transition hover:opacity-75'
                     >
                       Terms of Service
@@ -178,7 +173,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href='/cookie-policy'
+                      href='/'
                       className='text-light-700 transition hover:opacity-75'
                     >
                       Cookie Policy

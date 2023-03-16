@@ -1,7 +1,11 @@
 import { Metadata } from "next";
+import Image from "next/image";
+import heroImage from "../../public/car-back.webp";
 import Link from "next/link";
 import React from "react";
 import { TbAward, TbCheck } from "react-icons/tb";
+import contacts from "../../data/contacts";
+import stripeLinks from "../../data/payments";
 
 export const metadata: Metadata = {
   title: "EDT | Pricing",
@@ -9,18 +13,24 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <div>
-      <div className='cont py-24'>
-
+    <div className='relative'>
+      <Image
+        src={heroImage}
+        alt='edt hyundi i20 rear'
+        className='h-[50vh] object-cover grayscale -z-10'
+        priority
+        quality={50}
+      />
+      <div className='cont -translate-y-36'>
         <section className=''>
-          <div className=''>
+          <div className='bg-white/75 backdrop-blur-md px-5 pt-12 py-24 rounded-2xl'>
             <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
               <div>
                 <p className='inline-block sm:px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full text-primary-700'>
                   Pricing
                 </p>
               </div>
-              <h2 className='max-w-lg mb-6 h2 md:mx-auto'>
+              <h2 className='max-w-lg mb-6 h1 md:mx-auto'>
                 Easy Online Payment Options
               </h2>
               <p className='p2'>
@@ -83,9 +93,13 @@ export default function page() {
                   </div>
                 </div>
                 <div>
-                  <Link href='/' className='btn_2 flex'>
-                    Buy Now
+                  <Link
+                    href={{ pathname: stripeLinks.fullCourse }}
+                    className='btn_2 flex'
+                  >
+                    Pay for Course
                   </Link>
+
                   <p className='text-sm text-light-600 mt-4'>
                     Take the full EDT course with us and save!
                   </p>
@@ -143,15 +157,20 @@ export default function page() {
                   </div>
                 </div>
                 <div>
-                  <Link href='/' className='btn_1 flex'>
-                    Buy Now
+                  <Link
+                    href={{ pathname: stripeLinks.single }}
+                    className='btn_1 flex'
+                  >
+                    Pay for Lesson
                   </Link>
+
                   <p className='text-sm text-light-600 mt-4'>
                     Get the tools you need to succeed
                   </p>
                 </div>
               </div>
             </div>
+            <p className="mt-8 mx-auto w-full text-center h3">looking for a voucher? <Link className="link" href="/vouchers">Click here</Link></p>
           </div>
         </section>
       </div>

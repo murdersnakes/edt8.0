@@ -6,8 +6,8 @@ export default function Testimonials() {
   return (
     <div>
       <div className='cont pt-24'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
-          <div className='relative flex flex-col justify-start items-start'>
+      
+          <div className='max-w-lg mx-auto flex flex-col justify-start sm:justify-center items-start sm:items-center sm:text-center'>
             <div className='flex space-x-2'>
               <div className='h-5 w-5 rounded-r-full rounded-l-full mb-2 bg-third-600'></div>
               <div className='h-5 w-5 rounded-r-full rounded-l-full mb-2 bg-third-600'></div>
@@ -21,7 +21,7 @@ export default function Testimonials() {
               a skilled and accomplished driver!
             </p>
           </div>
-        </div>
+   
 
         <Carousel>
           {testimonials.map((testimonial) => {

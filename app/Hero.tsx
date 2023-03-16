@@ -7,16 +7,21 @@ export default function Hero() {
   return (
     <div className='relative overflow-hidden grid grid-cols-1 sm:grid-cols-2 items-center'>
       <div className='cont py-24'>
-        <div className='max-w-xl'>
-          <h1 className='h1'>Pass Your Test<br/> <span className=" text-primary-700">First Time</span></h1>
-          <p className='mt-4 mb-8 p1 text-light-600'>
+        <div className='max-w-lg mx-auto flex flex-col justify-start items-start  '>
+          <div className='flex space-x-2'>
+            <div className='h-5 w-5 rounded-r-full rounded-l-full mb-2 bg-secondary-600'></div>
+            <div className='h-5 w-5 rounded-r-full rounded-l-full mb-2 bg-third-600'></div>
+            <div className='h-5 w-5 rounded-r-full rounded-l-full mb-2 bg-primary-600'></div>
+          </div>
+          <h2 className='h1'>
+            Pass your test <br />
+            first time
+          </h2>
+          <p className='pt-4 p1'>
             Get the essential training you need to pass your driving test with
-            confidence. Our fully accredited ADI instructors and will guide you
-            through what it takes to be a great driver.
+            confidence. Damien O&apos; Reilly is a fully accredited ADI instructor and
+            will guide you through what it takes to be a great driver.
           </p>
-          <Link href='/' className='btn_1'>
-            Book a Lesson
-          </Link>
         </div>
       </div>
       <Image
